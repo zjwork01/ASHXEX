@@ -4,3 +4,9 @@ E:\ExCode\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.pdb
 E:\ExCode\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.csprojResolveAssemblyReference.cache
 E:\ExCode\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.dll
 E:\ExCode\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.pdb
+D:\code\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.dll.config
+D:\code\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.dll
+D:\code\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.pdb
+D:\code\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.csprojResolveAssemblyReference.cache
+D:\code\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.dll
+D:\code\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.pdb

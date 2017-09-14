@@ -13,8 +13,8 @@ namespace ASHXEX.Ashx
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.ContentType = "text/plain";
-            context.Response.Write("Hello World");
+            //接收命令并执行相应的命令
+
         }
 
         public bool IsReusable

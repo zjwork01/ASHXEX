@@ -34,13 +34,14 @@ namespace ASHXEX.View
         {
             //获取查询条件
             string name = string.Empty;
-            if(Request.QueryString["uname"]!= null && !string.IsNullOrEmpty(Request.QueryString["uname"]))
-            {
-                name = Request.QueryString["uname"];
-            }
             if (Request.QueryString["pid"] != null && !string.IsNullOrEmpty(Request.QueryString["pid"]))
             {
                 pid = Int32.Parse(Request.QueryString["pid"]);
+            }
+            if(Request.QueryString["uname"]!= null && !string.IsNullOrEmpty(Request.QueryString["uname"]))
+            {
+                name = Request.QueryString["uname"].ToString();
+                pid = 1;
             }
             //获取数据
             UserInfoBLL ub = new UserInfoBLL();

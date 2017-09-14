@@ -37,5 +37,15 @@ namespace ASHXEX.BLL
             }
         }
 
+        /// <summary>
+        /// 获取用户
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public UserInfo GetUserInfoById(int id)
+        {
+            return new UserInfoDAL().GetUserInfoById(id);
+        }
+
     }
 }
