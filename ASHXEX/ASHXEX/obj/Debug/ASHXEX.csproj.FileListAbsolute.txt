@@ -1,0 +1,6 @@
+E:\ExCode\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.dll.config
+E:\ExCode\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.dll
+E:\ExCode\ASHXEX\ASHXEX\ASHXEX\bin\ASHXEX.pdb
+E:\ExCode\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.csprojResolveAssemblyReference.cache
+E:\ExCode\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.dll
+E:\ExCode\ASHXEX\ASHXEX\ASHXEX\obj\Debug\ASHXEX.pdb

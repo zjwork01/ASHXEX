@@ -58,16 +58,37 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="View\UserInfoList.html" />
+    <Content Include="View\Script\jquery-1.8.3.min.js" />
+    <Content Include="View\Script\jquery.js" />
+    <Content Include="View\Script\jquery.Spinner.js" />
+    <Content Include="View\Script\jquery.zclip.js" />
+    <Content Include="View\UserInfoDetail.aspx" />
+    <Content Include="View\UserInfoList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ashx\Handler_Index.ashx.cs">
       <DependentUpon>Handler_Index.ashx</DependentUpon>
     </Compile>
+    <Compile Include="BLL\UserInfoBLL.cs" />
     <Compile Include="DAL\UserInfoDAL.cs" />
     <Compile Include="MODEL\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\PublicMethod.cs" />
+    <Compile Include="View\UserInfoDetail.aspx.cs">
+      <DependentUpon>UserInfoDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\UserInfoDetail.aspx.designer.cs">
+      <DependentUpon>UserInfoDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserInfoList.aspx.cs">
+      <DependentUpon>UserInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\UserInfoList.aspx.designer.cs">
+      <DependentUpon>UserInfoList.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ashx\Handler_Index.ashx" />
@@ -78,9 +99,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
