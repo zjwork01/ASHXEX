@@ -33,7 +33,7 @@
             //查询
             $('#search').click(function () {
                 var name = $('#txtName').val();
-                window.location.href = "UserInfoList.aspx?uname=" + name + "&pid=<%=pid%>";
+                window.location.href = "UserInfoList.aspx?uname=" + name + "&pid=1";
             });
 
         })

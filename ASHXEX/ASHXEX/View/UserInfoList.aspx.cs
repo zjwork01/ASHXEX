@@ -41,7 +41,6 @@ namespace ASHXEX.View
             if(Request.QueryString["uname"]!= null && !string.IsNullOrEmpty(Request.QueryString["uname"]))
             {
                 name = Request.QueryString["uname"].ToString();
-                pid = 1;
             }
             //获取数据
             UserInfoBLL ub = new UserInfoBLL();

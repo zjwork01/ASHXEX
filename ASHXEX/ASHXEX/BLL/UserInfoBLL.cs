@@ -47,5 +47,24 @@ namespace ASHXEX.BLL
             return new UserInfoDAL().GetUserInfoById(id);
         }
 
+        /// <summary>
+        /// 修改用户信息
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public bool EditUserInfo(UserInfo user)
+        {
+            return new UserInfoDAL().UpdateUserInfo(user);
+        }
+
+        /// <summary>
+        /// 删除用户信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool DeleteUserInfo(int id)
+        {
+            return new UserInfoDAL().DeleteUserInfoById(id);
+        }
     }
 }

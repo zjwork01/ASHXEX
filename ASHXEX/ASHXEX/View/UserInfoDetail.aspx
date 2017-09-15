@@ -118,7 +118,7 @@
             <tr>
                 <td colspan="2">
                     <%
-                        if (MUserInfo.ID != null)
+                        if (MUserInfo.ID != null && string.IsNullOrEmpty(MUserInfo.ID.ToString()))
                         {%>
                     <input type="button" id="edit" value="修改" />
                     <%}

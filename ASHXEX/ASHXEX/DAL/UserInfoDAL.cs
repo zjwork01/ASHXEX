@@ -8,7 +8,7 @@ namespace ASHXEX.DAL
 {
     public class UserInfoDAL
     {
-        private List<UserInfo> database = new List<UserInfo>()
+        private static List<UserInfo> database = new List<UserInfo>()
         {
             new UserInfo() {ID=1, Name="张三丰", Pwd="123456",Sex="男",Email="zj_work01@outlook.com" },
             new UserInfo() {ID=2, Name="张翠山", Pwd="123456",Sex="男",Email="zj_work02@outlook.com" },
