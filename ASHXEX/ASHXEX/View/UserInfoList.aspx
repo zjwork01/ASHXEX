@@ -30,11 +30,15 @@
     <script type="text/javascript">
         $(function () {
 
-            //查询
             $('#search').click(function () {
+                search();
+            });
+
+            //查询
+            function search() {
                 var name = $('#txtName').val();
                 window.location.href = "UserInfoList.aspx?uname=" + name + "&pid=1";
-            });
+            }
 
         })
     </script>
@@ -43,8 +47,9 @@
 <body>
     <div id="all">
         <div id="head">
-            姓名：<input type="text" id="txtName" />
+            姓名：<input type="text" id="txtName" value="<%=s_name %>" />
             <input id="search" type="button" value="搜索" />
+            <a href="UserInfoList.aspx">清空搜索</a>
         </div>
         <hr />
         <div id="main">

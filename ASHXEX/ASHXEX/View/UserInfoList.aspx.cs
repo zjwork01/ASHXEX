@@ -17,6 +17,7 @@ namespace ASHXEX.View
         public int pid = 1;
         public int allCount = 0;//总数据量
         public string pageUI = string.Empty;
+        public string s_name = string.Empty;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -33,22 +34,21 @@ namespace ASHXEX.View
         private void LoadData()
         {
             //获取查询条件
-            string name = string.Empty;
             if (Request.QueryString["pid"] != null && !string.IsNullOrEmpty(Request.QueryString["pid"]))
             {
                 pid = Int32.Parse(Request.QueryString["pid"]);
             }
             if(Request.QueryString["uname"]!= null && !string.IsNullOrEmpty(Request.QueryString["uname"]))
             {
-                name = Request.QueryString["uname"].ToString();
+                s_name = Request.QueryString["uname"].ToString();
             }
             //获取数据
             UserInfoBLL ub = new UserInfoBLL();
-            LUserInfo = ub.LoadUserInfo(name);
+            LUserInfo = ub.LoadUserInfo(s_name);
             allCount = LUserInfo.Count;
             LUserInfo = ub.GetPageData(pid, pageSize,allCount, LUserInfo);
             //加载分页
-            pageUI = Tools.PublicMethod.GetPageTabs("UserInfoList.aspx?uname=" + name + "&pid=", pageSize, pid, allCount, "", "");
+            pageUI = Tools.PublicMethod.GetPageTabs("UserInfoList.aspx?uname=" + s_name + "&pid=", pageSize, pid, allCount, "", "");
         }
 
     }

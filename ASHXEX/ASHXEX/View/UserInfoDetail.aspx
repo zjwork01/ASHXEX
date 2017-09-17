@@ -11,6 +11,7 @@
         $(function () {
             //修改用户信息
             $('#edit').click(function () {
+                var url = document.referrer;
                 var name = $('#uname').val();
                 var pwd = $('#pwd').val();
                 var rpwd = $('#rpwd').val();
@@ -30,7 +31,7 @@
                         var msg = JSON.parse(result);
                         if (msg.result == "success") {
                             alert("修改成功");
-                            window.location.href = "UserInfoList.aspx";
+                            window.location.href = url;
                         } else {
                             alert("修改失败");
                         }
@@ -118,7 +119,7 @@
             <tr>
                 <td colspan="2">
                     <%
-                        if (MUserInfo.ID != null && string.IsNullOrEmpty(MUserInfo.ID.ToString()))
+                        if (MUserInfo.ID != null && !string.IsNullOrEmpty(MUserInfo.ID.ToString()))
                         {%>
                     <input type="button" id="edit" value="修改" />
                     <%}
